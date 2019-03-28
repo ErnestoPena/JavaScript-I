@@ -123,7 +123,7 @@ const parent = {
   }
 }
 
-console.log(parent['child']['speak']);
+
 // Log the parent object's name
 
 console.log(parent.name);
@@ -142,8 +142,8 @@ console.log(parent.speak());
 
 // Have the child speak
 
-console.log(parent.child.speak());
+console.log(`${parent.child.speak()} and my parent name is ${parent.name}`);
 
 // Have the grandchild speak
 
-console.log(parent.child.grandchild.speak());
+console.log(`${parent.child.grandchild.speak()}, my parent name is ${parent.child.name} and my grandparent name is ${parent.name}`);
